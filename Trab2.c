@@ -46,5 +46,5 @@ int main(){
 	 	media +=tempo[i];
 	 }
 	 printf("\n%lf\n",(media/30));
-	 
+	  
 	}
