@@ -7,7 +7,7 @@ typedef struct Node{
 }Node;
 
 typedef struct ListaEncadeada{
-	Node *prim;
+	Node *prim, *last;
 }ListaEncadeada;
 
 void CriaListaEncadeada(ListaEncadeada *lista); // Cria Lista encadeada
