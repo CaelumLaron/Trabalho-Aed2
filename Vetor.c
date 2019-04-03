@@ -14,7 +14,7 @@ Node* CriaNode(int newDado){
 }
 
 void CriaNoListaEncadeada(ListaEncadeada *lista, int newDado){
-	Node *i = lista->prim, *aux;
+	Node *i = lista->prim;
 	if(i){
 		while(i->prox) 
 			i = i->prox;
