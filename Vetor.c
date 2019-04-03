@@ -16,12 +16,14 @@ Node* CriaNode(int newDado){
 void CriaNoListaEncadeada(ListaEncadeada *lista, int newDado){
 	Node *i = lista->prim;
 	if(i){
-		while(i->prox) 
-			i = i->prox;
-		i->prox = CriaNode(newDado);
+		Node *j = list->last;
+		j->prox = CriaNode(newDado);
+		lista->last = j->prox;
 	}
-	else
+	else{
 		lista->prim = CriaNode(newDado);
+		lista->last = lista->prim;
+	}
 }
 
 int BuscaSequencialListaEncadeada(int chave, ListaEncadeada lista){
