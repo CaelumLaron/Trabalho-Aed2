@@ -8,7 +8,7 @@ int main(){
  	double tempo[3][30];
  	clock_t tempo1,tempo2;
  	double media[3];
- 	char codes[3][30] = {"Bubble","Insection","Quick"};
+ 	char codes[3][30] = {"Bubble","Inserction","Quick"};
  	for(int i=0,j=0;i<30;i++){
  		PreencheVetorDesordenado(tam,vetor1);
  		tempo1 = clock();
