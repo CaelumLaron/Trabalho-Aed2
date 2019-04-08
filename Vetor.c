@@ -14,10 +14,6 @@ void PreencheVetorDesordenado(int n, int v[]){
 		v[i] = rand()%100000 + 1;
 }
 
-void CriaListaEVetorIguais(int n, ListaEncadeada *lista, int v[]){
-	for(int i=0; i<n; i++)
-		CriaNoListaEncadeada(lista, v[i]);
-}
 
 int BuscaBinariaVetor(int chave, int n, int v[]){
 	int ini = 0, fim = n-1, meio;
