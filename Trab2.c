@@ -1,5 +1,6 @@
 #include "stdio.h"
 #include "Vetor.h"
+#include "Lista.h"
 #include <time.h>
 
 int main(){
