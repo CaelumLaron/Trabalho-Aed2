@@ -36,3 +36,8 @@ int BuscaSequencialListaEncadeada(int chave, ListaEncadeada lista){
 	}
 	return 0;
 }
+
+void CriaListaEVetorIguais(int n, ListaEncadeada *lista, int v[]){
+	for(int i=0; i<n; i++)
+		CriaNoListaEncadeada(lista, v[i]);
+}
