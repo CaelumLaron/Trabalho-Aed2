@@ -41,3 +41,18 @@ void CriaListaEVetorIguais(int n, ListaEncadeada *lista, int v[]){
 	for(int i=0; i<n; i++)
 		CriaNoListaEncadeada(lista, v[i]);
 }
+
+void DestruirLista(ListaEncadeada *lista){
+	Node *aux;
+	aux = lista->prim;
+	if(!aux){
+		return;
+	}else{
+		while(aux){
+			lista->prim = aux->prox;
+			free(aux);
+			aux = lista->prim;
+		}
+	}
+	return;
+}
