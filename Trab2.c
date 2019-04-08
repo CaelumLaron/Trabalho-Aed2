@@ -49,4 +49,5 @@ int main(){
 	 }
 	 printf("\n%lf\n",(media/30));
 	 free(v);
+	 DestruirLista(&lista);
 	}
