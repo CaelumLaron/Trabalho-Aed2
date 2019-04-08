@@ -5,8 +5,9 @@
 
 int main(){
 	ListaEncadeada lista;
- 	int vetor1[1000000],chave[30];
- 	int tam = 1000000; 
+ 	int *v,chave[30];
+ 	int tam = 1000000;
+	v = (* int)malloc(1000000*sizeof(int));
  	clock_t tempo1,tempo2;
  	double media =0;
  	double tempo[30];
@@ -47,5 +48,5 @@ int main(){
 	 	media +=tempo[i];
 	 }
 	 printf("\n%lf\n",(media/30));
-	  
+	 free(v);
 	}
