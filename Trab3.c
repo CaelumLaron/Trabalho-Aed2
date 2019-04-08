@@ -3,7 +3,8 @@
 #include <time.h>
 
 int main(){
- 	int vetor1[100000];
+ 	int *v;
+  v = (* int)malloc(1000000*sizeof(int));
  	int j =0,tam = 100000;
  	double tempo[3][30];
  	clock_t tempo1,tempo2;
@@ -37,4 +38,5 @@ int main(){
  		}
  	}
  	printf("Media Bubble:%lf\n Media Insection:%lf\n MediaQuick:%lf\n",media[0]/30,media[1]/30,media[2]/30);
+  free(v);
  }
