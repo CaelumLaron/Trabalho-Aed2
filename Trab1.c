@@ -4,7 +4,7 @@
 #include <time.h>
 
 int main(){
- int *V,chave[30];
+ int *v,chave[30];
  int tam = 1000000;
  v = (* int)malloc(1000000*sizeof(int));	
  clock_t tempo1,tempo2;
