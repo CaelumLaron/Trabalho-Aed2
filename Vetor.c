@@ -3,8 +3,6 @@
 #include <time.h>
 
 void PreencheVetorOrdenado(int n, int v[]){
-	clock_t t;
-	srand((unsigned)time(t));
 	for(int i=0; i<n; i++)
 		v[i] =  (i>0)?(v[i-1] + rand()%10+1):(rand()%10+1);
 }
